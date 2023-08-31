@@ -40,7 +40,7 @@ controls = [
       "AWS-GR_SUBNET_AUTO_ASSIGN_PUBLIC_IP_DISABLED",
       "XLSIRLRDKWVQ", # [CT.CLOUDFORMATION.PR.1] Disallow management of resource types, modules, and hooks within the AWS CloudFormation registry
     ],
-    organizational_unit_ids = ["ou-8b3q-30a92cci", "ou-8b3q-7cuzgtwb"],
+    organizational_unit_ids = ["ou-8b3q-30a92cci", "ou-8b3q-7cuzgtwb", "ou-8b3q-n9c418kr"],
   },
   {
     # The following API controlidentifiers are region specific (eu-west-1)
@@ -54,15 +54,15 @@ controls = [
       "UBCGKOORFCMO", # [SH.EC2.1] EBS snapshots should not be publicly restorable
       "DUWNOGUJJEYE", # [SH.S3.3] S3 buckets should prohibit public write access
       "TUJJHFEUQRTD", # [SH.Account.1] Security contact information should be provided for an AWS account
-      "OVZGSDCWZLCD", # [CT.IAM.PR.1] Require that an AWS Identity and Access Management (IAM) inline policy does not have a statement that includes "*" in the Action and Resource elements
-      "ARQSBKHBXQCM", # [CT.IAM.PR.2] Require that AWS Identity and Access Management (IAM) customer-managed policies do not contain a statement that includes "*" in the Action and Resource elements
-      "HTVEKDWTRMZF", # [CT.IAM.PR.4] Require that an AWS Identity and Access Management (IAM) user does not have an inline or managed policy attached attached
+      #"OVZGSDCWZLCD", # [CT.IAM.PR.1] Require that an AWS Identity and Access Management (IAM) inline policy does not have a statement that includes "*" in the Action and Resource elements
+      #"ARQSBKHBXQCM", # [CT.IAM.PR.2] Require that AWS Identity and Access Management (IAM) customer-managed policies do not contain a statement that includes "*" in the Action and Resource elements
+      #"HTVEKDWTRMZF", # [CT.IAM.PR.4] Require that an AWS Identity and Access Management (IAM) user does not have an inline or managed policy attached attached
       "JGYSATNSTORL", # [SH.IAM.2] IAM users should not have IAM policies attached
       "RHVPZJVBRVIC", # [SH.IAM.3] IAM users' access keys should be rotated every 90 days or less
       "NEALLBIMAHJU", # [SH.IAM.4] IAM root user access key should not exist
       "WUGDSPITURNA", # [SH.IAM.5] MFA should be enabled for all IAM users that have a console password
       "VHIEQHFPSHXY", # [CT.KMS.PR.1] Require any AWS KMS key to have rotation configured
     ],
-    organizational_unit_ids = ["ou-8b3q-30a92cci", "ou-8b3q-7cuzgtwb"],
+    organizational_unit_ids = ["ou-8b3q-30a92cci", "ou-8b3q-7cuzgtwb", "ou-8b3q-n9c418kr"],
   },
 ]
