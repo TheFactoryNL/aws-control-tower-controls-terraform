@@ -38,7 +38,7 @@ controls = [
       "AWS-GR_S3_BUCKET_PUBLIC_WRITE_PROHIBITED",
       "AWS-GR_SSM_DOCUMENT_NOT_PUBLIC",
       "AWS-GR_SUBNET_AUTO_ASSIGN_PUBLIC_IP_DISABLED",
-      #"XLSIRLRDKWVQ", # [CT.CLOUDFORMATION.PR.1] Disallow management of resource types, modules, and hooks within the AWS CloudFormation registry
+      "XLSIRLRDKWVQ", # [CT.CLOUDFORMATION.PR.1] Disallow management of resource types, modules, and hooks within the AWS CloudFormation registry
     ],
     organizational_unit_ids = ["ou-8b3q-30a92cci", "ou-8b3q-7cuzgtwb", "ou-8b3q-n9c418kr"],
   },
