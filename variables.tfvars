@@ -45,7 +45,7 @@ controls = [
   {
     # The following API controlidentifiers are region specific (eu-west-1)
     control_names = [
-      "GNLTWRBKGZMV", # [CT.EC2.PR.5] Require any Amazon EC2 network ACL to prevent ingress from 0.0.0.0/0 to port 22 or port 3389
+      #"GNLTWRBKGZMV", # [CT.EC2.PR.5] Require any Amazon EC2 network ACL to prevent ingress from 0.0.0.0/0 to port 22 or port 3389
       "TPTBSUKLVYNV", # [SH.EC2.2] VPC default security group should not allow inbound and outbound traffic
       "YMSHAPVGFZMR", # [SH.EC2.21] Network ACLs should not allow ingress from 0.0.0.0/0 to port 22 or port 3389
       "ILUNFEJNBVLU", # [SH.EC2.7] EBS default encryption should be enabled
@@ -61,7 +61,7 @@ controls = [
       "RHVPZJVBRVIC", # [SH.IAM.3] IAM users' access keys should be rotated every 90 days or less
       "NEALLBIMAHJU", # [SH.IAM.4] IAM root user access key should not exist
       "WUGDSPITURNA", # [SH.IAM.5] MFA should be enabled for all IAM users that have a console password
-      "VHIEQHFPSHXY", # [CT.KMS.PR.1] Require any AWS KMS key to have rotation configured
+      #"VHIEQHFPSHXY", # [CT.KMS.PR.1] Require any AWS KMS key to have rotation configured
     ],
     organizational_unit_ids = ["ou-8b3q-30a92cci", "ou-8b3q-7cuzgtwb", "ou-8b3q-n9c418kr"],
   },
