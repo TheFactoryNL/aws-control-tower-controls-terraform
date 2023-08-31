@@ -40,7 +40,7 @@ controls = [
       "AWS-GR_SUBNET_AUTO_ASSIGN_PUBLIC_IP_DISABLED",
       "XLSIRLRDKWVQ", # [CT.CLOUDFORMATION.PR.1] Disallow management of resource types, modules, and hooks within the AWS CloudFormation registry
     ],
-    organizational_unit_ids = ["ou-8b3q-30a92cci", "ou-8b3q-7cuzgtwb", "ou-8b3q-n9c418kr"],
+    organizational_unit_ids = ["ou-8b3q-30a92cci", "ou-8b3q-7cuzgtwb"],
   },
   {
     # The following API controlidentifiers are region specific (eu-west-1)
@@ -63,6 +63,6 @@ controls = [
       "WUGDSPITURNA", # [SH.IAM.5] MFA should be enabled for all IAM users that have a console password
       "VHIEQHFPSHXY", # [CT.KMS.PR.1] Require any AWS KMS key to have rotation configured
     ],
-    organizational_unit_ids = ["ou-8b3q-30a92cci", "ou-8b3q-7cuzgtwb", "ou-8b3q-n9c418kr"],
+    organizational_unit_ids = ["ou-8b3q-30a92cci", "ou-8b3q-7cuzgtwb"],
   },
 ]
