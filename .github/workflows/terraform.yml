@@ -40,6 +40,19 @@ jobs:
     - name: Run TFLint
       run: tflint -f compact
 
+  tfsec:
+    runs-on: ubuntu-latest
+
+    steps:
+        - name: Checkout
+          uses: actions/checkout@v3
+
+        - name: Checkout
+          uses: actions/checkout@v3
+
+        - name: Run Tfsec
+          uses: aquasecurity/tfsec-action@v1.0.3
+
   terraform:
     name: 'Terraform'
     runs-on: ubuntu-latest
