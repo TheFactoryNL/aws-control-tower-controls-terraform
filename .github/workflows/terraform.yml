@@ -11,6 +11,7 @@ permissions:
 
 jobs:
   tflint:
+    name: tflint
     runs-on: ubuntu-latest
 
     steps:
@@ -41,6 +42,8 @@ jobs:
       run: tflint -f compact
 
   tfsec:
+    name: tfsec
+    needs: tflint
     runs-on: ubuntu-latest
 
     steps:
@@ -51,6 +54,8 @@ jobs:
           uses: aquasecurity/tfsec-action@v1.0.3
 
   checkov:
+    name: checkov
+    needs: tfsec
     runs-on: ubuntu-latest
 
     steps:
@@ -72,7 +77,8 @@ jobs:
             framework: terraform
 
   terraform:
-    name: 'Terraform'
+    name: terraform
+    needs: checkov
     runs-on: ubuntu-latest
     environment: production
     defaults:
